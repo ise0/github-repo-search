@@ -61,6 +61,7 @@ export function RepoList({ search }: { search: string }) {
                                     sort: order,
                                     pagination: { page: 'next', perPage: v.pagination.perPage }
                                 }))
+                                setCurrentPage(0)
                             }}
                             order={queryParams.sort} />
                     }
