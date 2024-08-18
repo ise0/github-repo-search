@@ -3,6 +3,13 @@ import { AppBar, Box, Button, Container, TextField } from "@mui/material";
 import { useState } from "react";
 import styles from './styles.module.scss'
 
+/**
+ *  Компонент заголовок.
+ *  @param value стартовое значение поля поиска.
+ *  @param onChange callback который будет вызван при изменении значения поля поиска.
+ *  
+ *  @public
+ */
 export function Header({ value, onChange }: { value: string, onChange: (v: string) => void }) {
     const [search, setSearch] = useState(value)
     return (

@@ -4,6 +4,12 @@ import { RepoCard } from "./repo-card"
 import { useEffect, useState } from "react"
 import { QueryParams, Repository, useGetRepositoriesQuery } from "@/api"
 
+/**
+ *  Компонент реализующий запрос поиска репозиториев и отображающий его результат.
+ *  @param search параметр принимающий часть имени репозитория для запроса поиска репозиториев 
+
+ *  @public
+ */
 export function RepoList({ search }: { search: string }) {
     const [currentRepo, setCurrentRepo] = useState<Repository>()
     const [currentPage, setCurrentPage] = useState(0)
@@ -28,7 +34,7 @@ export function RepoList({ search }: { search: string }) {
         return (
             <Box height='100%' display='flex' alignItems='center' justifyContent='center'>
                 <Typography variant="h4" mr={2}>{'Что-то пошло не так :('}</Typography>
-                <Button variant="outlined" size="large" onClick={()=>query.refetch()}>Повторить</Button>
+                <Button variant="outlined" size="large" onClick={() => query.refetch()}>Повторить</Button>
             </Box>
         )
     }
