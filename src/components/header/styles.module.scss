@@ -1,0 +1,5 @@
+.text-field {
+    :global(.MuiInputBase-input)::placeholder {
+        font-style: italic;
+    }
+}
