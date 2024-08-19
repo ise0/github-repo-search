@@ -22,14 +22,14 @@ export default function Home() {
 
   return (
     <Provider store={store}>
-      <Box height='100vh' display="flex" flexDirection="column" >
+      <Box height='100vh' minWidth='1400px' display="flex" flexDirection="column" >
         <Box minHeight={'76px'} />
         <Header value={search} onChange={(v) => setSearch(v)} />
         {search == '' ?
-          <Typography m='auto' variant="h4" component="h2">Добро пожаловать</Typography> :
+          <Typography m='auto' variant="h3" component="h2">Добро пожаловать</Typography> :
           <RepoList search={search} />
         }
-        <Box bgcolor='#4F4F4F' minHeight='32px' width='100%' alignSelf='flex-end' />
+        <Box bgcolor='#4F4F4F' minHeight='32px' width='100%'/>
       </Box>
     </Provider>
   );
