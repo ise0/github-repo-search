@@ -1,3 +1,4 @@
+<h1>Для корректной работы проекта необходимо назначить гитхаб токен для переменной окружения NEXT_PUBLIC_GITHUB_TOKEN</h1>
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
